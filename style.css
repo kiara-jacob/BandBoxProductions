@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 html,body{
-    overflow-x: clip;
+  overflow-x: clip;
 }
 .navbar {
   background-color: #fff;
