@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Box Productions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a528595bc4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo"><img src=bandboxlogo.png height="45px" width="45px">Band Box Productions</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page">Services</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="home">
+      <video class="video-slide active" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Band Box<br><span>Productions</span></h1>
+        <p> Band Box Productions provides various Audio/Visual, Video Animation and Photography production services to a host of Pharmaceutical and Healthcare related organisations like Novartis, Sanofi, J&J , Merck, Roche Diagnostics, Santen and Koolex Cold Chain to name a few.</p>
+        <a href="about.html">View More</a>
+      </div>
+      <div class="content">
+        <h1>Corporate<br><span>Audio/Visuals</span></h1>
+        <p>We have produced Corporate films for Tata Motors, Airtel, Toshiba, Videocon, Mckinseys, GE, Reliance Communications, Coca Cola, Thomas Cook, Citi Bank, Novartis, Dr.Reddys, JnJ, Sanofi, Roche  Diagnostics  and  Taj Hotels to name a few.</p>
+        <p></p>
+        <a href="corporate.html">View More</a>
+      </div>
+      <div class="content">
+        <h1>Animations<br><span>and Infographics</span></h1>
+        <p></p>
+        <a href="#">Watch More</a>
+      </div>
+      <div class="content">
+        <h1>Testimonial<br><span>Videos</span></h1>
+        <p></p>
+        <a href="#">View More</a>
+      </div>
+      <div class="content">
+        <h1>Plant & Machinery<br><span> Videos</span></h1>
+        <p></p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.youtube.com/user/alexyjacob/videos"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><img src="bandboxlogo.png"></div>
+        </div>
+        <div class="main__content">
+          <h1>About Us</h1>
+          <p>We are a Film, Video & Photography Production house established in 1997 and involved in verticals of producing Corporate Films, AVs, Music Videos & promos, TV Programmes, Documentaries, TV Spots, Social & Public service films and Licensing of Indian content to Networks around the world.</p>
+          <p>We have produced TV promos, Theatrical Trailers, and behind the Scenes for Hindi Films like Iqbal, Dor, Life in a Metro to name a few.
+           We at Band Box have Produced Documentaries, social and public awareness films for UNICEF. E.g. we have shot some of “The Pulse Polio” campaigns with various film celebrities. <br><br><br>
+</p>
+          <button class="main__btn"><a href="about.html">Learn More</a></button>
+        </div>
+      </div>
+    </div>
+        <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Learn more about us</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Company History</h2>
+          <p>*stuff*</p>
+          <div class="services__btn"><button class="main__btn"><a href="chatbot.html">Past Projects</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Archive Reels</h2>
+          <p>*stuff*</p>
+          <div class="services__btn"><button class="main__btn"><a href="doctor.html">Watch Here</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Past Work Section -->
+    <div class="main1" id="past">
+      <div class="main1__container">
+        <div class="main1__content">
+          <h1>Companies we have worked with</h1>
+          <h2> </h2>
+          <p>We are the pioneers of the Music Promo (Packaged &3D/2D Animated TV Ad Spots for music albums), having produced over 5000 promos for various Retro and current Indian artistes, International singers and bands. We have to our credit the TV ad spots of some of the highest selling Devotional, Classical and Ghazal Albums in India (e.g. Hey Ram by Jagit Singh). </p>
+          <button class="main1__btn"><a href="about.html">Learn More</a></button>
+        </div>
+        <div class="main1__img--container">
+          <div class="main1__img--card"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">Band Box Productions</a>
+        </div>
+        <div class="website__rights">
+          <p>© Band Box Productions</p>
+        </div>
+        <div class="social__icons">
+          <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+      
