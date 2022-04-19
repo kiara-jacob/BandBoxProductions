@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexy Jacob">
+    <meta name="description" content="Band Box Productions provides various Audio/Visual, Animation, Photography and Video production services to a host of Corporates including Pharmaceutical and Healthcare related organisations.">
+    <meta name="keywords" content="Mumbai, India, Corporate Video, Corporate, Audio Visuals, Animations, Infographics, Pharamceuticals Videos, Patient Testimonials, Testimonials, Photography, Videography, Video Production, Healthcare organizations, Whiteboard Animations, Brand Launch Videos">
+    <title> Band Box Productions </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a528595bc4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"><img src="/images/bandboxlogo.jpg" height="45px" width="45px" title="Band Box Productions">Band Box Productions</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" active class="navbar__linksa" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links" id="about-page">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="services.html" class="navbar__links" id="services-page">Past Work</a>
+          </li>
+          <li class="navbar__btn">
+            <a class="bn39" href="#contact"><span class="bn39span">Contact Us</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> BAND BOX PRODUCTIONS CELEBRATES 25 YEARS !</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><img src="/images/banner.jpg" alt="band box productions 25th anniversary logo"></div>
+        </div>
+        <div class="main__content">
+          <div class="container">
+            <h1 class="typed-out">Band Box</h1>
+          </div>
+          <h2>Productions</h2>
+          <p>We are a Film, Video & Photography Production house established in 1997 and involved in verticals of producing
+            Corporate Films, AVs, Music Videos & promos, TV Programmes, Documentaries, TV Spots, Social & Public service
+            films and Licensing of Indian content to Networks around the world.</p>
+          <p>Currently, Band Box Productions is providing various Audio/Visuals, Animation, Photography and Video Production services
+          to a host of Pharmaceutical and Healthcare related organizations like Novartis, Sanofi, J&J , Merck, Roche Diagnostics,
+          Santen and Koolex Cold Chain to name a few. <br><br><br>
+          </p>
+          <a href="about.html" class="btn41-43 btn-42">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <section class="home">
+      <video class="video-slide active" src="/videos/slide1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/videos/slide2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/videos/slide3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/videos/slide4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/videos/slide5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Band Box<br><span>Productions</span></h1>
+        <p> For the last 25 years, Band Box Productions has produced Corporate and HR AV's, Animations, Whiteboard Infographics and Explainer Videos, Patient Testimonials and Plant and Machinery Videos</p>
+        <a href="services.html" class="btn41-43 btn-42">View More</a>
+      </div>
+      <div class="content">
+        <h1>Corporate & <br><span>HR Videos</span></h1>
+        <a href="services.html" class="btn41-43 btn-42">View More</a>
+      </div>
+      <div class="content">
+        <h1>Animations,<br><span> Infographics & Explainer AVs</span></h1>
+        <p></p>
+        <a href="services.html" class="btn41-43 btn-42">View More</a>
+      </div>
+      <div class="content">
+        <h1>Testimonial<br><span>Videos</span></h1>
+        <p></p>
+        <a href="services.html" class="btn41-43 btn-42">View More</a>
+      </div>
+      <div class="content">
+        <h1>Plant & Machinery<br><span> Videos</span></h1>
+        <p></p>
+        <a href="services.html" class="btn41-43 btn-42">View More</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.youtube.com/user/alexyjacob/featured" target="_blank" title="Band Box Productions YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/alexy-jacob-8569811/"><i class="fab fa-linkedin" target="_blank" title="Band Box Productions Owner LinkedIn"></i></a>
+        <a href="https://www.facebook.com/bandboxproductions"><i class="fab fa-facebook" target="_blank" title="Band Box Productions Facebook"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Our Clients</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <a href="services.html">
+            <img src="images/partners1.jpg" alt="Sanofi Novartis Roche Medley Pharma Johnson & Johnson ">
+          </a>
+        </div>
+        <div class="services__card">
+          <a href="services.html">
+            <img src="images/partners4.jpg" alt="Koolex Taj Hotels UNICEF Tata Motors Airtel">
+          </a>
+        </div>
+        <div class="services__card">
+          <a href="services.html">
+            <img src="images/partners2.jpg" alt="Toshiba Saregaama Universal Music Virgin EMI Records">
+          </a>
+        </div>
+        <div class="services__card">
+          <a href="services.html">
+            <img src="images/partners3.jpg" alt="Tseries Warner Music Group Tips BMG">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer__container" id="contact">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <h2 id="footer__logo"> Contact Us: </h2>
+          <a href="index.html" id="footer__logo" title="Home">Band Box Productions</a>
+          <a href="https://www.google.com/maps/place/Bandra+West,+Mumbai,+Maharashtra/@19.0544782,72.8121447,14z/data=!3m1!4b1!4m5!3m4!1s0x3be7c8e123f8d27b:0x437996b49a236a78!8m2!3d19.0595596!4d72.8295287"
+            id="footer__logo" style="font-size: 1em;" target="_blank" title="Our Address">Address: Pali Hill, Bandra West,
+            Mumbai 400050</a>
+        </div>
+        <div class="website__rights">
+          <p>© Band Box Productions</p>
+        </div>
+        <div class="social__icons">
+          <a href="mailto: info@bandboxproductions.com" class="social__icon--link" target="_blank"
+            title="Band Box Productions Email"><i class="fa-solid fa-at"></i></a>
+          <a href="https://www.youtube.com/user/alexyjacob/featured" class="social__icon--link" target="_blank"
+            title="Band Box Productions Youtube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/alexy-jacob-8569811/" class="social__icon--link" target="_blank"
+            title="Band Box Productions LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/bandboxproductions" class="social__icon--link" target="_blank"
+            title="Band Box Productions Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+      
