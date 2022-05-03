@@ -1,4 +1,4 @@
-# BandBoxProductionsWebsite
+# Band Box Productions Website
 Designed a mobile and web responsive website for Band Box Productions along with a updated logo for the company's 25th Anniversary Celebrations.
 
 Band Box Productions is a Mumbai based Film, Video & Photography Production house established in 1997 and involved in verticals of producing Corporate Films, AVs, Music Videos & promos, TV Programmes, Documentaries, TV Spots, Social & Public service films and Licensing of Indian content to Networks around the world.
